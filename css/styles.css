@@ -1,57 +1,161 @@
 /*Ini CSS*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 250, 243);
+*{
+    text-decoration: none;
+    margin: 1px;
 }
 
+body{
+    font-family: 'open sans', sans-serif;
+}
+
+
+/* style navigation bar */
+nav  {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 193, 188);
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    @media (max-width: 991px)
+}
+
+.header {
+    text-align: center;
+}
+
+
+
+/* style untuk logo */
 .logo-icon {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url(assets/logo.png);
+    background-image: url(/assets/logo.png);
     background-size: cover; /*agar tampilannya dynamic*/
     background-repeat: no-repeat;
 
 }
 
+
+/* style untuk item menu taskbar */
 .nav-item {
-    border: 2px solid black;
+    border: 0px ;
     border-radius: 15%;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0px 11px 0px 11px;
     align-items: center;
-    color: black;
+    color: rgb(185, 37, 37);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.banner-container {
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+   
+
+/* style banner*/
+.home-image {
     height: 300px;
-    border: 2px solid black;
+    background-image: url(https://st2.depositphotos.com/1875497/7347/i/450/depositphotos_73475481-stock-photo-abstract-blur-gym.jpg);
+    background-size: cover;
+    text-align: center;
+    background-position: 69%;
 }
 
-.recipe-list {
+/* style tulisan dalam banner */
+.banner-text {
+    padding-top: 100px;
+    color: rgb(84, 16, 16);
+}
+
+.banner-text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(46, 27, 4);
+    font-size: 40px;
+}
+
+.banner-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(46, 27, 4);
+    font-size: 15px;
+}
+
+
+/* About us */
+.about {
+    text-align: center;
+}
+
+.about-text {
+    
+}
+
+
+
+
+
+
+/* <!-- Our Facilities --> */
+
+/* style fasilitas list */
+.fasilitas {
+    text-align: center;
+}
+
+.Facilities-list {
     display: flex;
     justify-content: space-around;
 }
 
-.item.list {
+.jenis-kelas {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid black;
+    overflow: hidden;
 }
 
-.form-result {
-    height: 80px;
-    border: 1px solid black;
+.jenis-kelas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Facilities-list>div>h6 {
+    text-align: center;
+}
+   
+
+
+
+
+
+
+
+/* style untuk form */
+
+.input {
+    width: 300px;
+    border-radius: 3%;
 }
 
 .message-us-section {
     display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.form-result {
+    height: 160px;
+    border: 1px solid black;
 }
 
 .result-section {
-    width: 100%;
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
 }
 
