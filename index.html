@@ -3,61 +3,103 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" contents="width=device-width, initial-scales=1.0">
-        <title>Resep Masakan</title>
+        <title>NABS FIT</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
+    <!-- style untuk nav bar -->
     <body>
         <nav>
-            <div class="logo-icon">         </div>
+            <div style="display: flex;">
+                <div class="logo-icon">    </div>
+            </div>
+            
 
             <secton>
                 <a class="nav-item" href="#home">Home</a>
-                <a class="nav-item" href="#Facilities">Our Facilities</a>
+                <a class="nav-item" href="#aboutus">Anout Us</a>
+                <a class="nav-item" href="#Facilities">Facilities</a>
                 <a class="nav-item" href="#message-us">Message Us</a>
             </secton>
-
+            <br>
         </nav>
 
-        <hr>
+        
 
         <!-- Home -->
-        <section id="home">
-            <header>
-                <h1>Welcome to Recipe Website</h1>
-            </header>
-            <article>
-                <p>Kumpulan resep makanan nusantara maupun masakan internasional.</p>
+        <div class="home-image">
+            <div class="banner-text">
+                <h1>Hai Guest, Selamat Datang di NABS FIT</h1>
+                <p>Kami menyediakan berbagai fasilitas olahraga dan kelas </p>
+                <a class="btn" href="">selengkapnya</a>
+            </div>
+        </div>
+    </header>   
+    </section>
 
-                <div class="banner-container"></div>
+
+
+        <hr>
+
+        <!-- about us -->
+        <section id="aboutus">
+            <header>
+                <h1 class="about">About Us</h1>
+            </header>
+
+            <article class="about-text">
+                Kami adalah salah satu tempat kebugaran yang berdiri pada tahun 2024 ini menyediakan berbagai macam fasilitas kebugaran yang khusus untuk wanita. Dikarenakan banyak sekali para wanita yang ingin berolah raga tapi tidak mau tempat olah raganya bareng dengan laki-laki. Maka kami memutuskan untuk membuat tempat kebugaran yang dikhususkan untuk wanita agar dapat lebih nyaman berolah raga. 
+            </article>
+
+
+        </section>
+        <hr>
+
+
+        
+        <!-- Our Facilities -->
+        <section id="Facilities">
+            <header>
+                <h1 class="fasilitas">Facilities</h1><br>
+            </header>
+
+            <article class="Facilities-list">
+                <div>
+                    <div class="jenis-kelas" >
+                        <img src="https://media.istockphoto.com/id/1438034462/photo/latino-and-african-sport-woman-exercising-and-build-muscle-in-stadium-active-strong-beautiful.jpg?s=612x612&w=0&k=20&c=kFwCRkh8Q1v6uCoSTL7sQcsbk02zgSZJ1kDgnJ3DAZc=">
+                    </div>
+                    <h6 class="text-kelas">Gym</h6>
+                </div>
+                <div>
+                    <div class="jenis-kelas">
+                        <img src="https://images.ctfassets.net/cnu0m8re1exe/3qzr3eoWDYXq9tHmnr3QzK/dade797f13615399d1be31d5d68246a6/shutterstock_1660411888.jpg">
+                    </div>
+                    <h6 class="text-kelas">Yoga</h6>
+                </div>
+                <div>
+                    <div class="jenis-kelas">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp8n1rtmFAnohB-Q6z4KQtdgOmZ31YHWvXDLIi6QmgVBiG4aDB8kNxUpz7He8amMWD3Iw&usqp=CAU">
+                    </div>
+                    <h6 class="text-kelas">Pilates</h6>
+                </div>
+                <div>
+                    <div class="jenis-kelas">
+                        <img src="https://cdn1-production-images-kly.akamaized.net/2chdfJIAi6zGFWUitPOGsOEzU6c=/0x86:999x649/800x450/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4776324/original/013125200_1710755442-active-people-taking-part-zumba-class-together.jpg">
+                    </div>
+                    <h6 class="text-kelas">Zumba</h6>
+                </div>
+                <div>
+                    <div class="jenis-kelas">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclgeZbTP999LB7V3PT8Gcp5IBgZEmtwf_hg&s">
+                    </div>
+                    <h6 class="text-kelas">Poundfit</h6>
+                </div>
             </article>
         </section>
 
+      
         <hr>
-
-        <!-- Our Recipe -->
-        <section id="Recipe">
-            <header>
-                <h1>Recipes List</h1>
-            </header>
-            <article class="recipe-list">
-                <div>
-                    <div class="item-list"></div>
-                    <h6>Dessert</h6>
-                </div>
-                <div>
-                    <div class="item-list"></div>
-                    <h6>Korean Food</h6>
-                </div>
-                <div>
-                    <div class="item-list"></div>
-                    <h6>Western Food</h6>
-                </div>
-            </article>
-        </section>
-
-        <hr>
-                
+        
         <!-- Massage Us -->
         <section id="message-us">
             <header>
@@ -68,9 +110,35 @@
                 <!-- Form -->
                 <section>
                     <form>
-                        <label>Name:</label>
-                        <input />
+                        <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td><input class="input" type="text" placeholder="Nama"></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td><input class="input" type="date" placeholder="Tanggal Lahir"></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td><input type="radio" name="jk">Laki-Laki
+                                    <input type="radio" name="jk">Perempuan
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Pesan</td>
+                                <td valign="top">:</td>
+                                <td><textarea class="input" placeholder="Pesan"></textarea></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="submit" style="width: 410px; border-radius: 3%;" value="submit">
                     </form>
+
+
                 </section>
 
                 <!-- Result -->
