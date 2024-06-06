@@ -13,7 +13,7 @@ body{
 nav  {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(236, 193, 188);
+    background-color: rgb(236, 168, 159);
     position: sticky;
     top: 0px;
     align-items: center;
@@ -23,8 +23,6 @@ nav  {
 .header {
     text-align: center;
 }
-
-
 
 /* style untuk logo */
 .logo-icon {
@@ -53,6 +51,7 @@ nav  {
 
 .nav-item:hover {
     text-decoration: underline;
+    color: rgb(177, 43, 226);
 }
 
    
@@ -74,36 +73,57 @@ nav  {
 
 .banner-text h1 {
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(46, 27, 4);
+    color: rgb(101, 54, 54);
     font-size: 40px;
 }
 
 .banner-text p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(46, 27, 4);
+    color: rgb(101, 54, 54);
     font-size: 15px;
 }
 
 
 /* About us */
+.kotak-ab {
+    height: 300px;
+    background-color: rgb(232, 203, 200);
+    background-size: cover;
+    text-align: center;
+    background-position: 69%;
+}
+
+
+
 .about {
+    padding: 40px 40px 0px 40px;
     text-align: center;
 }
 
 .about-text {
-    
+    padding: 0px 40px 0px 40px;
+    text-align: justify;
+
 }
-
-
-
 
 
 
 /* <!-- Our Facilities --> */
 
 /* style fasilitas list */
+.kotak-fs {
+    height: 200px;
+    background-color: rgb(231, 191, 187);
+    background-size: cover;
+    text-align: center;
+    background-position: 69%;
+}
+
+
 .fasilitas {
     text-align: center;
+    padding: 40px 40px 0px 40px;
+
 }
 
 .Facilities-list {
@@ -132,10 +152,14 @@ nav  {
 
 
 
-
-
-
 /* style untuk form */
+.kotak-mu {
+    height: 300px;
+    background-color: rgb(232, 203, 200);
+    background-size: cover;
+    text-align: center;
+    background-position: 69%;
+}
 
 .input {
     width: 300px;
@@ -148,14 +172,18 @@ nav  {
     align-items: start;
 }
 
+
+
 .form-result {
     height: 160px;
     border: 1px solid black;
+    color: beige;
 }
 
 .result-section {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 165px;
     margin-left: 50px;
+    background-color: white;
 }
 

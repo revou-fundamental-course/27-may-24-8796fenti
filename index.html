@@ -5,11 +5,13 @@
         <meta name="viewport" contents="width=device-width, initial-scales=1.0">
         <title>NABS FIT</title>
         <link rel="stylesheet" href="css/styles.css">
+        
     </head>
 
     <!-- style untuk nav bar -->
     <body>
-        <nav>
+        
+            <nav>
             <div style="display: flex;">
                 <div class="logo-icon">    </div>
             </div>
@@ -17,7 +19,7 @@
 
             <secton>
                 <a class="nav-item" href="#home">Home</a>
-                <a class="nav-item" href="#aboutus">Anout Us</a>
+                <a class="nav-item" href="#aboutus">About Us</a>
                 <a class="nav-item" href="#Facilities">Facilities</a>
                 <a class="nav-item" href="#message-us">Message Us</a>
             </secton>
@@ -29,35 +31,41 @@
         <!-- Home -->
         <div class="home-image">
             <div class="banner-text">
-                <h1>Hai Guest, Selamat Datang di NABS FIT</h1>
+                <h1>Hai <span id="nm">Girls</span>, Selamat Datang di NABS FIT</h1>
                 <p>Kami menyediakan berbagai fasilitas olahraga dan kelas </p>
-                <a class="btn" href="">selengkapnya</a>
+                <a class="btn" href="#aboutus">selengkapnya</a>
+               
             </div>
+       
         </div>
-    </header>   
-    </section>
+     
+    
 
 
+     <hr>
 
-        <hr>
+
 
         <!-- about us -->
-        <section id="aboutus">
-            <header>
-                <h1 class="about">About Us</h1>
-            </header>
+        <div class="kotak-ab">
+            <section id="aboutus">
+                <header>
+                    <h1 class="about">About Us</h1><br>
+                </header>
 
-            <article class="about-text">
-                Kami adalah salah satu tempat kebugaran yang berdiri pada tahun 2024 ini menyediakan berbagai macam fasilitas kebugaran yang khusus untuk wanita. Dikarenakan banyak sekali para wanita yang ingin berolah raga tapi tidak mau tempat olah raganya bareng dengan laki-laki. Maka kami memutuskan untuk membuat tempat kebugaran yang dikhususkan untuk wanita agar dapat lebih nyaman berolah raga. 
-            </article>
+                <article class="about-text">
+                    Kami adalah salah satu tempat kebugaran yang berdiri pada tahun 2024 ini menyediakan berbagai macam fasilitas kebugaran yang khusus untuk wanita. Dikarenakan banyak sekali para wanita yang ingin berolah raga tapi tidak mau tempat olah raganya bareng dengan laki-laki. Maka kami memutuskan untuk membuat tempat kebugaran yang dikhususkan untuk wanita agar dapat lebih nyaman berolah raga. 
+                </article>
+            </section>
+        </div>
 
 
-        </section>
         <hr>
 
 
         
         <!-- Our Facilities -->
+        <div class="kotak-fs">
         <section id="Facilities">
             <header>
                 <h1 class="fasilitas">Facilities</h1><br>
@@ -96,11 +104,13 @@
                 </div>
             </article>
         </section>
+        </div>
 
       
-        <hr>
         
         <!-- Massage Us -->
+
+        <div class="kotak-mu">
         <section id="message-us">
             <header>
                 <h1>Message Us</h1>
@@ -109,12 +119,12 @@
             <section class="message-us-section">
                 <!-- Form -->
                 <section>
-                    <form>
+                    <formn id="data">
                         <table>
                             <tr>
                                 <td>Nama</td>
                                 <td>:</td>
-                                <td><input class="input" type="text" placeholder="Nama"></td>
+                                <td><input class="input" type="text" placeholder="Nama" id="name-input"></td>
                             </tr>
                             <tr>
                                 <td>Tanggal Lahir</td>
@@ -143,11 +153,13 @@
 
                 <!-- Result -->
                 <section class="result-section">
-                    <div class="form-result">
+                    <div id="hasil" class="form-result">
 
                     </div>
                 </section>
             </section>
         </section>
+    </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
